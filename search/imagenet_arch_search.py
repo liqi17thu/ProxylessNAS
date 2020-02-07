@@ -86,7 +86,7 @@ parser.add_argument('--target_hardware', type=str, default=None, choices=['mobil
 """ Grad hyper-parameters """
 parser.add_argument('--grad_update_arch_param_every', type=int, default=5)
 parser.add_argument('--grad_update_steps', type=int, default=1)
-parser.add_argument('--grad_binary_mode', type=str, default='full_v2', choices=['full_v2', 'full', 'two'])
+parser.add_argument('--grad_binary_mode', type=str, default='two', choices=['full_v2', 'full', 'two'])
 parser.add_argument('--grad_data_batch', type=int, default=None)
 parser.add_argument('--grad_reg_loss_type', type=str, default='mul#log', choices=['add#linear', 'mul#log'])
 parser.add_argument('--grad_reg_loss_lambda', type=float, default=1e-1)  # grad_reg_loss_params
